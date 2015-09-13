@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Ruby on Rails and Ember.js development team || aac.digital </title>
+    <meta name="description" content="We build apps for startups! aac.digital is specialized in Ruby on Rails & Ember.js" />
+    <meta property="og:title" content="Ruby on Rails and Ember.js development team || aac.digital" />
+    <meta property="og:description" content="We build apps for startups! aac.digital is specialized in Ruby on Rails & Ember.js" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://aac.digital" />
+    <meta name="robots" content="index, follow" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "bootstrap", "owl.carousel", "all" %>
+
+
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= javascript_include_tag "jquery-1.11.2", "owl.carousel", "all" %>
+    <%= partial "analytics" %>
+    <%= partial "chat" %>
+  </body>
+</html>
